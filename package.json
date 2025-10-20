@@ -27,6 +27,9 @@
       "import": "./eslint.config.js"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "prettier": "./prettier.js",
   "scripts": {
     "format": "prettier . --write",
