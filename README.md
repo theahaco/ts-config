@@ -10,7 +10,7 @@
   </a>
 </div>
 
-# @aha-co/config
+# @theahaco/ts-config
 
 Standardized set of configuration files for TypeScript projects so we don't have
 to think about them. Heavily inspired by
@@ -22,7 +22,7 @@ These are a set of defaults and everything can be overridden as needed per
 project.
 
 ```
-npm install @aha-co/config
+npm install @theahaco/ts-config
 ```
 
 ### TypeScript
@@ -32,7 +32,7 @@ Create a `tsconfig.json` file in the project root and
 
 ```json
 {
-	"extends": ["@aha-co/config/typescript"],
+	"extends": ["@theahaco/ts-config/typescript"],
 	"include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
 	"compilerOptions": {
 		// override here
@@ -43,7 +43,7 @@ Create a `tsconfig.json` file in the project root and
 Create a `reset.d.ts` file:
 
 ```ts
-import "@aha-co/config/reset.d.ts"
+import "@theahaco/ts-config/reset.d.ts"
 ```
 
 #### TS for Libraries
@@ -54,7 +54,7 @@ be consumable in as many setups as possible. You can extend a different config
 instead:
 
 ```json
-  extends: ["@aha-co/config/typescript.lib"],
+  extends: ["@theahaco/ts-config/typescript.lib"],
 ```
 
 ### ESLint
@@ -63,7 +63,7 @@ Create a `eslint.config.js` file in the project root and
 [extend this config file](https://eslint.org/docs/latest/extend/shareable-configs#overriding-settings-from-shareable-configs):
 
 ```js
-import { config } from "@aha-co/config/eslint"
+import { config } from "@theahaco/ts-config/eslint"
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
@@ -77,7 +77,7 @@ export default [
 Add a line in `package.json` to point to this config file:
 
 ```json
-  "prettier": "@aha-co/config/prettier",
+  "prettier": "@theahaco/ts-config/prettier",
 ```
 
 You can add a `.prettierignore` file to your project root if needed.
