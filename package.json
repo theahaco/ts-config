@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@aha-co/config",
-  "version": "1.2.0",
-  "description": "Standardized configs for Aha JS projects",
+  "name": "@theahaco/ts-config",
+  "version": "0.0.0-semantically-released",
+  "description": "Standardized configs for The Aha Co TS/JS projects",
   "main": "index.js",
   "types": "index.d.ts",
   "type": "module",
@@ -43,7 +43,8 @@
     "eslint",
     "prettier",
     "typescript",
-    "aha-co"
+    "javascript",
+    "theahaco"
   ],
   "author": {
     "name": "The Aha Co",
@@ -52,9 +53,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theahaco/aha-co-config.git"
+    "url": "git+https://github.com/theahaco/ts-config.git"
   },
-  "homepage": "https://github.com/theahaco/aha-co-config",
+  "homepage": "https://github.com/theahaco/ts-config",
   "license": "MIT",
   "dependencies": {
     "@total-typescript/ts-reset": "^0.6.1",
@@ -78,6 +79,6 @@
     "prettier": "^3.6.2",
     "react": "^19.1.0",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.16"
   }
 }
