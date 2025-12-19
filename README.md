@@ -30,7 +30,7 @@ npm install @theahaco/ts-config
 Create a `tsconfig.json` file in the project root and
 [extend this config file](https://www.typescriptlang.org/tsconfig/#extends):
 
-```json
+```js
 {
 	"extends": ["@theahaco/ts-config/typescript"],
 	"include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
@@ -42,7 +42,7 @@ Create a `tsconfig.json` file in the project root and
 
 Create a `reset.d.ts` file:
 
-```ts
+```js
 import "@theahaco/ts-config/reset.d.ts"
 ```
 
@@ -53,7 +53,7 @@ If you're creating a library, you'll want the configuration to be more strict to
 be consumable in as many setups as possible. You can extend a different config
 instead:
 
-```json
+```js
   extends: ["@theahaco/ts-config/typescript.lib"],
 ```
 
@@ -76,7 +76,7 @@ export default [
 
 Add a line in `package.json` to point to this config file:
 
-```json
+```js
   "prettier": "@theahaco/ts-config/prettier",
 ```
 
