@@ -21,7 +21,7 @@ to think about them. Heavily inspired by
 These are a set of defaults and everything can be overridden as needed per
 project.
 
-```
+```sh
 npm install @theahaco/ts-config
 ```
 
@@ -81,3 +81,9 @@ Add a line in `package.json` to point to this config file:
 ```
 
 You can add a `.prettierignore` file to your project root if needed.
+
+
+## Roadmap
+
+- [ ] Test configuration and coverage?
+- [ ] Standardized release actions?
