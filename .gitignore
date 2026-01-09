@@ -1,4 +1,28 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
 node_modules
 
+# Caches
+.npm
+.eslintcache
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Editor files
+.log
+.projectile
+[._]*.sw[a-p]
+[._]sw[a-p]
+.vscode/*
+
+# OS files
 .DS_Store
 ._*
